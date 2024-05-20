@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#BA4CEBFF"
+    tools:context=".MainActivity">
+
+    <ImageButton
+        android:id="@+id/orderSandwich"
+        android:layout_width="216dp"
+        android:layout_height="115dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.413"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.575"
+        app:srcCompat="@drawable/sandwich"
+        android:contentDescription="@string/orderSandwich" />
+
+    <ImageButton
+        android:id="@+id/orderCoffee"
+        android:layout_width="214dp"
+        android:layout_height="123dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.416"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.327"
+        android:contentDescription="@string/orderCoffee"
+        app:srcCompat="@drawable/coffee" />
+
+    <ImageButton
+        android:id="@+id/orderDonut"
+        android:layout_width="220dp"
+        android:layout_height="126dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.424"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.067"
+        android:contentDescription="@string/orderDonuts"
+        app:srcCompat="@drawable/donuts" />
+
+    <Button
+        android:id="@+id/currentOrder"
+        android:layout_width="272dp"
+        android:layout_height="71dp"
+        android:layout_marginStart="69dp"
+        android:layout_marginTop="41dp"
+        android:layout_marginEnd="70dp"
+        android:layout_marginBottom="31dp"
+        android:text="@string/view_current_order"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:iconTint="#E91E63"
+        app:layout_constraintBottom_toTopOf="@+id/allOrders"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/orderSandwich"
+        app:rippleColor="#00BCD4" />
+
+    <Button
+        android:id="@+id/allOrders"
+        android:layout_width="269dp"
+        android:layout_height="67dp"
+        android:layout_marginStart="69dp"
+        android:layout_marginTop="31dp"
+        android:layout_marginEnd="73dp"
+        android:layout_marginBottom="91dp"
+        android:text="@string/View_All_Orders"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/currentOrder" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

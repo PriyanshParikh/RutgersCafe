@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/basketActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CurrentOrderActivityManager">
+
+    <ListView
+        android:id="@+id/orders"
+        android:layout_width="393dp"
+        android:layout_height="269dp"
+        android:layout_marginTop="156dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.152"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/placeOrder"
+        android:layout_width="175dp"
+        android:layout_height="82dp"
+        android:layout_marginEnd="84dp"
+        android:text="@string/place_order"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/orderTotal"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/orderTotal"
+        app:layout_constraintTop_toBottomOf="@+id/orderTotal"
+        app:layout_constraintVertical_bias="0.163" />
+
+    <TextView
+        android:id="@+id/orderSubTotal"
+        android:layout_width="160dp"
+        android:layout_height="31dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="156dp"
+        android:text="@string/subtotal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/orders" />
+
+    <TextView
+        android:id="@+id/orderSubTotal2"
+        android:layout_width="151dp"
+        android:layout_height="30dp"
+        android:text="@string/subtotal3"
+        app:layout_constraintBottom_toBottomOf="@+id/orderSubTotal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.065"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/orderSubTotal"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/orderSalesTax"
+        android:layout_width="152dp"
+        android:layout_height="35dp"
+        android:text="@string/sales_tax2"
+        app:layout_constraintBottom_toBottomOf="@+id/salesTax"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.061"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/salesTax"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/orderTotal"
+        android:layout_width="146dp"
+        android:layout_height="26dp"
+        android:text="@string/total2"
+        app:layout_constraintBottom_toBottomOf="@+id/total"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.06"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/total"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/salesTax"
+        android:layout_width="160dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="8dp"
+        android:text="@string/sales_tax"
+        app:layout_constraintEnd_toEndOf="@+id/orderSubTotal"
+        app:layout_constraintTop_toBottomOf="@+id/orderSubTotal" />
+
+    <TextView
+        android:id="@+id/total"
+        android:layout_width="106dp"
+        android:layout_height="26dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="84dp"
+        android:text="@string/total"
+        app:layout_constraintEnd_toEndOf="@+id/salesTax"
+        app:layout_constraintTop_toBottomOf="@+id/salesTax" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="264dp"
+        android:layout_height="83dp"
+        android:layout_marginStart="96dp"
+        android:layout_marginTop="52dp"
+        android:text="@string/current_order"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#2196F3"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

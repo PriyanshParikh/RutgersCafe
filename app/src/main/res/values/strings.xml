@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">RutgersCafe</string>
+    <string name="todo">TODO</string>
+    <string name="add_to_order">Add To Order</string>
+    <string name="subtotal2">Subtotal</string>
+    <string name="subtotal3">       Subtotal:</string>
+    <string name="place_order">Place Order</string>
+    <string name="subtotal">subtotal</string>
+    <string name="sales_tax2">Sales Tax:</string>
+    <string name="sales_tax">sales tax</string>
+    <string name="total2">Total:</string>
+    <string name="total">total</string>
+    <string name="current_order">Current Order</string>
+    <string name="sweetCream">Sweet Cream</string>
+    <string name="mocha">Mocha</string>
+    <string name="frenchVanilla">French Vanilla</string>
+    <string name="irishCream">Irish Cream</string>
+    <string name="caramel">Caramel</string>
+    <string name="all_orders">All Orders</string>
+    <string name="lettuce">Lettuce</string>
+    <string name="cheese">Cheese</string>
+    <string name="onion">Onion</string>
+    <string name="tomato">Tomato</string>
+    <string name="orderCoffee">Order Coffee</string>
+    <string name="orderSandwich">Order Sandwich</string>
+    <string name="view_current_order">View Current Order</string>
+    <string name="View_All_Orders">View All Orders</string>
+    <string name="orderDonuts">Order Donuts</string>
+</resources>
